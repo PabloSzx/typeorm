@@ -1,7 +1,7 @@
 {
-  "name": "typeorm",
-  "private": true,
-  "version": "0.2.18",
+  "name": "@pablosz/typeorm",
+  "private": false,
+  "version": "0.2.20",
   "description": "Data-Mapper ORM for TypeScript, ES7, ES6, ES5. Supports MySQL, PostgreSQL, MariaDB, SQLite, MS SQL Server, Oracle, MongoDB databases.",
   "license": "MIT",
   "readmeFilename": "README.md",
@@ -9,7 +9,7 @@
     "name": "Umed Khudoiberdiev",
     "email": "pleerock.me@gmail.com"
   },
-  "main": "./index.js",
+  "main": "./package/index.js",
   "browser": {
     "./browser/driver/postgres/PostgresDriver.js": "./browser/platform/BrowserDisabledDriversDummy.js",
     "./browser/driver/oracle/OracleDriver.ts": "./browser/platform/BrowserDisabledDriversDummy.js",
@@ -21,6 +21,9 @@
     "./browser/repository/MongoRepository.js": "./browser/platform/BrowserDisabledDriversDummy.js",
     "./index.js": "./browser/index.js"
   },
+  "files": [
+    "package"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/typeorm/typeorm.git"
